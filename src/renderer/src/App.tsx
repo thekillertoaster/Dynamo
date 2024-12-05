@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { useState } from 'react'
+import { ModeToggle } from '@/components/ModeToggle'
 
 function App(): JSX.Element {
   // const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
@@ -16,6 +17,7 @@ function App(): JSX.Element {
 
   return (
     <div className="flex flex-row items-center justify-center p-16">
+      <ModeToggle />
       <Card className="w-[350px]">
         <CardHeader>
           <CardTitle>Counter: {counter}</CardTitle>
